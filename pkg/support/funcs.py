@@ -15,7 +15,7 @@ import plotly.graph_objects as go
 import shapefile
 import datetime
 
-HOME = 'C:\\Users\\BPARK17\\OneDrive - azureford\\JupyterNotebooks\\Elevate_dashbord\\'
+HOME = '.\\'
 
 def return_center():
   lat = 42.3827
