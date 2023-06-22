@@ -15,7 +15,9 @@ import plotly.graph_objects as go
 import shapefile
 import datetime
 
-HOME = 'https://github.com/bumsubp/Elevate_dashboard/tree/main/'
+import os
+
+HOME = os.path.dirname(os.path.abspath(__file__)) + '\\'
 
 def return_center():
   lat = 42.3827
