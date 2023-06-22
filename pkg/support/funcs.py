@@ -1,24 +1,7 @@
 import pandas as pd
-# import geopandas as gpd
-import os
-import streamlit as st
-import numpy as np
-from scipy.ndimage import gaussian_filter
-import requests
-import json
-
-import plotly
-from plotly.subplots import make_subplots
-import plotly.figure_factory as ff
-import plotly.graph_objects as go
-
 import shapefile
 import datetime
 
-import os
-
-# current_dir = os.getcwd()
-# HOME = os.path.dirname(os.path.dirname(current_dir))
 HOME = ''
 
 def return_center():

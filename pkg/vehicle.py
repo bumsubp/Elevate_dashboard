@@ -2,18 +2,16 @@
 Dependencies
 """
 import streamlit as st
-from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes
 import pkg.support.funcs as funcs
 import datetime
 import math
 import pandas as pd
 import plotly.graph_objects as go
-import plotly.express as px
 from plotly.subplots import make_subplots
 import numpy as np
 
 def main():
-  set_css_style()
+  # set_css_style()
 
   veh_raw_df = funcs.get_vehicles_data()
 
@@ -157,17 +155,17 @@ def main():
   st.table(veh_df)
   
 
-def set_css_style():
-  st.markdown(
-    """
-    <style>
-    [data-testid="stImage"] {
-      overflow-x: scroll; 
-      width: 100%;
-      height: 250px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-  )
+# def set_css_style():
+#   st.markdown(
+#     """
+#     <style>
+#     [data-testid="stImage"] {
+#       overflow-x: scroll; 
+#       width: 100%;
+#       height: 250px;
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+#   )
 

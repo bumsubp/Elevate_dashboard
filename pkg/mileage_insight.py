@@ -6,7 +6,6 @@ import pkg.support.funcs as funcs
 import datetime
 import numpy as np
 import math
-import geopandas as gpd
 import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
