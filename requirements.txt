@@ -16,4 +16,3 @@ gcsfs
 requests
 altair==4.0
 pyshp
-shapefile
