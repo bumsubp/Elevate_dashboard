@@ -101,7 +101,7 @@ def format_kpi_metric_1(label, value, target, delta, delta_dir=1):
   # chart_html = fig.to_html(full_html=False)
   
   return f'''
-      <div class="kpi_metric_1">
+      <div data-testid="metric-container" class="kpi_metric_1">
         <span style="font-size: 20px;color:black;">{label}</span><br>
         <span style="font-size: 16px;">(Target: {target})</span><br>
         <span style="font-size: 40px;">{value}</span><br>
