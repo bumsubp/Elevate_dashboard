@@ -1,5 +1,5 @@
 import pandas as pd
-import geopandas as gpd
+# import geopandas as gpd
 import os
 import streamlit as st
 import numpy as np
@@ -15,7 +15,7 @@ import plotly.graph_objects as go
 import shapefile
 import datetime
 
-HOME = '..\\'
+HOME = ''
 
 def return_center():
   lat = 42.3827
