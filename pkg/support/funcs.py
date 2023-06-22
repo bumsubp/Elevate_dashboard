@@ -19,8 +19,9 @@ import os
 
 # HOME = os.path.dirname(os.path.abspath(__file__)) + '\\'
 
-current_dir = os.getcwd()
-HOME = os.path.dirname(os.path.dirname(current_dir))
+# current_dir = os.getcwd()
+# HOME = os.path.dirname(os.path.dirname(current_dir))
+HOME = '/'
 
 def return_center():
   lat = 42.3827
@@ -36,7 +37,7 @@ def get_vehicles_data():
     1FADP3K26GL284844	Ford	Focus	2016	Roger Beasley Mazda	2/3/2023	7307.27	
     1FADP3K25EL156818	Ford	Focus	2014	BBB Industries	2/9/2023	5900	
   """
-  return pd.read_excel(f'{HOME}src\\data\\excel\\vehicles.xlsx', sheet_name='vehicles')
+  return pd.read_excel(f'{HOME}src/data/excel/vehicles.xlsx', sheet_name='vehicles')
 
 def get_people_data():
   """
