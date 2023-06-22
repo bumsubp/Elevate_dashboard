@@ -17,7 +17,8 @@ import datetime
 
 import os
 
-HOME = os.path.dirname(os.path.abspath(__file__)) + '\\'
+# HOME = os.path.dirname(os.path.abspath(__file__)) + '\\'
+HOME = '..\\..\\'
 
 def return_center():
   lat = 42.3827
