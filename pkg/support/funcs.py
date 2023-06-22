@@ -21,7 +21,7 @@ import os
 
 # current_dir = os.getcwd()
 # HOME = os.path.dirname(os.path.dirname(current_dir))
-HOME = '/'
+HOME = '../../'
 
 def return_center():
   lat = 42.3827
