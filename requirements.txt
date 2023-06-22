@@ -15,4 +15,5 @@ fsspec
 gcsfs
 requests
 altair==4.0
+pyshp
 shapefile==2.3.0
