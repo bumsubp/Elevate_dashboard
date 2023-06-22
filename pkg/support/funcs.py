@@ -43,7 +43,7 @@ def get_people_data():
     emp-id	emp-name	emp-email	emp-status	emp-role
     1	Craig Powers	cpower@ford.com	full-time	flexible
   """
-  return pd.read_excel(f'{HOME}src\\data\\excel\\people.xlsx', sheet_name='people')
+  return pd.read_excel(f'{HOME}src/data/excel/people.xlsx', sheet_name='people')
 
 def get_parts_data():
   """
@@ -52,7 +52,7 @@ def get_parts_data():
     ACPZ 1012 H	1001	FCSD	10423317		new	0.64	16	20	12.288
     BM5Z 13008 F	1001				new	47.1	1	20	56.52
   """
-  return pd.read_excel(f'{HOME}src\\data\\excel\\parts.xlsx', sheet_name='parts')
+  return pd.read_excel(f'{HOME}src/data/excel/parts.xlsx', sheet_name='parts')
 
 def get_repair_tasks_data():
   """
@@ -62,7 +62,7 @@ def get_repair_tasks_data():
     1002	1FADP3K26GL284844	2/3/2023	8:00:00 AM	3/29/2023	5:00:00 PM			re-conditioning
     1003	1FADP3K25EL156818	2/16/2023	8:00:00 AM	3/27/2023	5:00:00 PM			re-conditioning
   """
-  return pd.read_excel(f'{HOME}src\\data\\excel\\repair-tasks.xlsx', sheet_name='repair-tasks')
+  return pd.read_excel(f'{HOME}src/data/excel/repair-tasks.xlsx', sheet_name='repair-tasks')
 
 def get_repair_steps_data():
   """
@@ -72,28 +72,27 @@ def get_repair_steps_data():
     90	33.75	1		1
     430	161.25	1		1
   """
-  return pd.read_excel(f'{HOME}src\\data\\excel\\repair-steps.xlsx', sheet_name='repair-steps')
+  return pd.read_excel(f'{HOME}src/data/excel/repair-steps.xlsx', sheet_name='repair-steps')
 
 def get_checks_data():
   """
   example:
     check-id	vin	check-mechanical-score	check-cosmetic-score	check-cleanness-score	check-inspection-details-file	emp-id	check-mileage	check-notes	check-date-in	check-time-in	check-date-out	check-time-out	check-time-elapsed-minutes
   """
-  return pd.read_excel(f'{HOME}src\\data\\excel\\checks.xlsx', sheet_name='checks')
+  return pd.read_excel(f'{HOME}src/data/excel/checks.xlsx', sheet_name='checks')
 
 def get_claim_data():
   """
   example:
     claim-id	claim-date	claim-description	claim-status	claim-cost-covered-by-insurance	claim-cost-not-covered-by-insurance
   """
-  return pd.read_excel(f'{HOME}src\\data\\excel\\claims.xlsx', sheet_name='claims')
+  return pd.read_excel(f'{HOME}src/data/excel/claims.xlsx', sheet_name='claims')
 
 def get_trip_summary_data():
-  return pd.read_csv(f'{HOME}src\\data\\scav\\ncvdvqaa_trip_sum_4g_na_usa_msi_vw_2023_04_12.csv')
+  return pd.read_csv(f'{HOME}src/data/scav/ncvdvqaa_trip_sum_4g_na_usa_msi_vw_2023_04_12.csv')
 
 def get_trip_sum_line_data():
-  return shapefile.Reader(f'{HOME}src\\data\\scav\\test.shp')
-  # return gpd.read_file(f'{HOME}src\\data\\scav\\test.shp')
+  return shapefile.Reader(f'{HOME}src/data/scav/test.shp')
 
 def get_first_day_of_week(year, week_number):
   first_day = datetime.date.fromisocalendar(year, week_number, 1)
