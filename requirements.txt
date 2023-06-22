@@ -17,3 +17,4 @@ requests
 altair==4.0
 pyshp
 matplotlib==3.7.1
+openpyxl==3.0.7
